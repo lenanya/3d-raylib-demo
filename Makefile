@@ -8,7 +8,7 @@ OBJS = build/demo.o
 build/demo: $(OBJS)
 	$(CC) $(CFLAGS) -o build/demo $(OBJS) $(LDFLAGS)
 
-build/demo.o: src/main.c include/demo.h
+build/demo.o: src/main.c
 	$(CC) $(CFLAGS) -c src/main.c -o build/demo.o
 
 run: build/demo
